@@ -28,7 +28,7 @@ const PropertySchema = new Schema({
         type: Number,
         required: true
     },
-    bath: {
+    baths: {
         type: Number,
         required: true
     },
@@ -42,7 +42,7 @@ const PropertySchema = new Schema({
         }
     ],
     rates: {
-        nighlty: Number,
+        nightly: Number,
         weekly: Number,
         monthly: Number
     },

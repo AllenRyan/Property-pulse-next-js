@@ -1,7 +1,7 @@
 import '@/Assets/styles/globals.css'
 import Footer from '@/components/footer';
 import Navbar from '@/components/Navbar';
-
+import AuthProvider from '@/components/AuthProvider';
 
 
 export const metadata = {
@@ -12,6 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <AuthProvider>
     <html lang="en">
       <body>
       <main>
@@ -21,5 +22,7 @@ export default function RootLayout({ children }) {
       </main>
       </body>
     </html>
+    </AuthProvider>
+
   );
 }
