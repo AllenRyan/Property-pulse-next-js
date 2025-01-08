@@ -186,6 +186,7 @@ function Navbar() {
                   role="menuitem"
                  tabIndex="-1"
                   id="user-menu-item-0"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   >Your Profile</Link>
                 <Link
                   href="/properites/saved"
@@ -193,6 +194,7 @@ function Navbar() {
                   role="menuitem"
                  tabIndex="-1"
                   id="user-menu-item-2"
+                onClick={() => setIsMobileMenuOpen(false)}
                   >Saved Properties</Link>
                 <button
                   className="block px-4 py-2 text-sm text-gray-700"

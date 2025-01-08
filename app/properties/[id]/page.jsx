@@ -5,11 +5,13 @@ import ConnectDB from "@/config/database"
 import Property from "@/config/models/Property"
 import Link from "next/link"
 import { FaArrowLeft } from "react-icons/fa"
+import { convertToSerializableObject } from "@/utils/convertToObject"
 
 const PropertyPage = async ({ params }) => {
     await ConnectDB()
     const { id } = await params;
-    const property = await Property.findById(id).lean();
+    const propertyDoc = await Property.findById(id).lean();
+    const property = convertToSerializableObject(propertyDoc)
     return (
         <>
         <PropertyHeaderImage image={property.images[0]}/>
