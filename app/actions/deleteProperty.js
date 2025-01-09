@@ -10,7 +10,7 @@ async function deleteProperty(propertyId){
  if(!sessionUser || !sessionUser.userId){
     throw new Error('User ID is required');
  }
- const { userId } = sessionUser();
+ const { userId } = sessionUser;
  await ConnectDB();
  const property = await Property.findById(propertyId);
  if(!property) throw new Error('Property Not Found');
