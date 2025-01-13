@@ -60,9 +60,7 @@ const PropertyMap = ({ property }) => {
         }
 
         const encodedAddress = encodeURIComponent(addressString);
-        
-        console.log("Encoded address:", encodedAddress);
-        console.log("API URL:", `https://nominatim.openstreetmap.org/search?q=${encodedAddress}&format=json&limit=1`);
+  
 
         const response = await fetch(
           `https://nominatim.openstreetmap.org/search?q=${encodedAddress}&format=json&limit=1`

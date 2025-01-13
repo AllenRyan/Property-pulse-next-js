@@ -189,7 +189,7 @@ function Navbar() {
                   onClick={() => setProfileMenuOpen(false)}
                   >Your Profile</Link>
                 <Link
-                  href="/properites/saved"
+                  href="/properties/saved"
                   className="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
                  tabIndex="-1"
