@@ -1,6 +1,5 @@
 import ConnectDB from "@/config/database";
 import Message from "@/config/models/Message";
-import '@/models/Property';
 import { convertToSerializableObject } from "@/utils/convertToObject";
 import { getSessionUser } from "@/utils/getSessionUser";
 
